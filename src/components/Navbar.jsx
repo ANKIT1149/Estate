@@ -6,7 +6,7 @@ import Button from "./Button";
 const Navbar = () => {
   return (
     <>
-      <div className="w-[100%] h-[auto] overflow-hidden overflow-y-hidden shadow-md shadow-slate-700">
+      <div className="w-[100%] h-[auto] overflow-hidden overflow-y-hidden shadow-md shadow-slate-500">
         <div className="flex items-center sm:items-center max-sm:justify-center sm:flex-row p-2 mb-2">
           <div className="logo">
             <img
@@ -37,7 +37,12 @@ const Navbar = () => {
             ))}
             <ul className="list-none flex">
               <li>
-                  <Button />
+                  <Button text="Shop Now"/>
+              </li>
+              </ul>
+              <ul>
+              <li>
+                  <Button text="Login Now"/>
               </li>
             </ul>
           </nav>
