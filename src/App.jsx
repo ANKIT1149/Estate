@@ -5,10 +5,11 @@ import {
 } from "react-router-dom";
 import { About, Contact, Home, Login, Product, Services } from "./pages";
 import { Navbar } from "./components";
+import ThemeProvider from "./context/ThemeProvider";
 
 function App() {
   return (
-    <>
+    <ThemeProvider>
       <Router>
         <Navbar />
          <Routes>
@@ -20,7 +21,7 @@ function App() {
             <Route path="login" element={<Login />} />
          </Routes>
       </Router>
-    </>
+    </ThemeProvider>
   );
 }
 

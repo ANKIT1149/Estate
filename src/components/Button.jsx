@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 // import React from 'react'
 
+// import { useContext } from "react";
 import { NavLink } from "react-router-dom";
+// import ThemeContext from "../context/ThemeContext";
 
 const Button = ({ text }) => {
+  // const {mode} = useContext(ThemeContext);
   return (
     <NavLink
       to={text === "Login Now" ? "login" : "about"}
