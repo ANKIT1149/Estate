@@ -22,4 +22,19 @@ export const Navlink = [
       to: "contact"
     },
   ];
+
+  export const StatusData = [
+      {
+         Brand: '55M',
+         Text: 'Brand'
+      },
+      {
+        Brand: '38M',
+        Text: 'Car Sold',
+      },
+      {
+        Brand: '84M',
+        Text: 'Happy Customer'
+      }
+  ];
   
