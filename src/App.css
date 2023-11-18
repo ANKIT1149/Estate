@@ -2,3 +2,12 @@
 ::-webkit-scrollbar{
    display: none;
 }
+
+.show{
+  opacity: 0; 
+}
+
+.BrandData img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
