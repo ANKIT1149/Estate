@@ -1,4 +1,6 @@
 export { default as Navbar } from "./Navbar";
 export { default as HeroSection } from "./HeroSection";
 export { default as AboutSection } from "./AboutSection";
-export {default as Status} from "./Status"
+export {default as Status} from "./Status";
+export {default as Paint} from "./Paint";
+

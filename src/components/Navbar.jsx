@@ -12,6 +12,15 @@ const Navbar = () => {
   const { mode, toggleMode } = useContext(ThemeContext);
   return (
     <>
+      <p
+        className="capitalize flex h-10 items-center justify-center bg-pink-600 px-4 text-sm font-medium text-white sm:px-6 lg:px-8"
+        style={{
+          backgroundColor: mode === "dark" ? "rgb(62 64 66)" : "",
+          color: mode === "dark" ? "white" : "",
+        }}
+      >
+        Get free Driving Licencse on buying the car
+      </p>
       <div className="w-[100%] h-[auto] overflow-hidden overflow-y-hidden shadow-md shadow-slate-500">
         <div className="flex items-center sm:items-center max-sm:justify-center sm:flex-row p-2 mb-2">
           <NavLink to="/" className="logo">
