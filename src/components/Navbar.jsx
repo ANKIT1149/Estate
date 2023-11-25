@@ -1,3 +1,4 @@
+/* eslint-disable no-constant-condition */
 // import React from 'react'
 import { Link, NavLink } from "react-router-dom";
 import CardoLogo from "../assets/Logo.jpeg";
@@ -7,9 +8,24 @@ import { useContext } from "react";
 import ThemeContext from "../context/ThemeContext";
 import { BsFillCloudSunFill } from "react-icons/bs";
 import { FiSun } from "react-icons/fi";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const { mode, toggleMode } = useContext(ThemeContext);
+
+  const admin = JSON.parse(localStorage.getItem("user"));
+  const user = JSON.parse(localStorage.getItem("user"));
+  console.log(user)
+
+  const logout = () => {
+  if (user) {
+    toast.success("Logout SuccessFull");
+    localStorage.clear(user);
+   setTimeout(() => {
+     window.location.reload(true)
+   }, 5000);
+  }
+  }
   return (
     <>
       <p
@@ -53,14 +69,31 @@ const Navbar = () => {
                 </ul>
               </>
             ))}
+            {admin?.user?.email === "ankitsrivastav38@gmail.com" ? <ul className=" list-none flex gap-4">
+              <li className="flex gap-4">
+                {" "}
+                <NavLink
+                  to="/admin"
+                  className={({ isActive }) =>
+                    ` font-bold font-serif capitalize leading-normal ${
+                      isActive ? "text-red-900" : " text-red-600"
+                    } text-xl ${
+                      mode === "dark" ? "text-white" : "text-red-600"
+                    }`
+                  }
+                >
+                  Admin
+                </NavLink>
+              </li>
+            </ul> : ''}
             <ul className="list-none flex">
               <li>
                 <Button text="Shop Now" />
               </li>
             </ul>
             <ul>
-              <li>
-                <Button text="Login Now" />
+              <li onClick={logout}>
+                <Button text={user ? "Logout" : 'Login Now'} />
               </li>
             </ul>
             <button

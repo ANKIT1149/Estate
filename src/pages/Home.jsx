@@ -1,4 +1,4 @@
-import { AboutSection,  HeroSection, Paint, Status} from "../components"
+import { AboutSection,  Feature,  HeroSection, Paint, RecentProducts, Status} from "../components"
 import Brand from "../components/Brand";
 
 const Home = () => {
@@ -9,6 +9,8 @@ const Home = () => {
          <Status />
          <Brand />
          <Paint />
+         <Feature />
+         <RecentProducts />
          <AboutSection />
        </div>
     </>
