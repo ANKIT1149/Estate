@@ -4,7 +4,7 @@ import Brand from "../components/Brand";
 const Home = () => {
   return (
     <>
-       <div className=" w-[100%] h-screen ">
+       <div className=" w-[100%] h-screen overflow-x-hidden">
          <HeroSection />
          <Status />
          <Brand />
