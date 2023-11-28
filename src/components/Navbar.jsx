@@ -86,6 +86,24 @@ const Navbar = () => {
                 </NavLink>
               </li>
             </ul> : ''}
+
+            {user || admin?.user?.email === "ankitsrivastav38@gmail.com" ? <ul className=" list-none flex gap-4">
+              <li className="flex gap-4">
+                {" "}
+                <NavLink
+                  to="/admin"
+                  className={({ isActive }) =>
+                    ` font-bold font-serif capitalize leading-normal ${
+                      isActive ? "text-red-900" : " text-red-600"
+                    } text-xl ${
+                      mode === "dark" ? "text-white" : "text-red-600"
+                    }`
+                  }
+                >
+                  My Order
+                </NavLink>
+              </li>
+            </ul> : ""}
             <ul className="list-none flex">
               <li>
                 <Button text="Shop Now" />
