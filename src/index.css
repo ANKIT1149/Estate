@@ -31,3 +31,7 @@
            transform: rotateY(360deg);
      }
 }
+
+form input{
+      text-transform: capitalize; 
+}
