@@ -19,6 +19,7 @@ import { Navbar } from "./components";
 import ThemeProvider from "./context/ThemeProvider";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Order from "./pages/Order";
 function App() {
   return (
     <ThemeProvider>
@@ -32,6 +33,14 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route
+            path="order"
+            element={
+              <protectedRoutesUser>
+                <Order />
+              </protectedRoutesUser>
+            }
+          />
           <Route
             path="admin"
             element={
@@ -53,6 +62,16 @@ export const protectedRoutesAdmin = ({ children }) => {
   const admin = JSON.parse(localStorage.getItem("user"));
 
   if (admin.user.email === "ankitsrivastav38@gmail.com") {
+    return children;
+  } else {
+    <Navigate to={"login"} />;
+  }
+};
+
+export const protectedRoutesUser = ({ children }) => {
+  const user = JSON.parse(localStorage.getItem("user"));
+
+  if (user) {
     return children;
   } else {
     <Navigate to={"login"} />;
