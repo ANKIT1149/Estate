@@ -3,7 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate,
 } from "react-router-dom";
 import {
   About,
@@ -36,17 +35,17 @@ function App() {
           <Route
             path="order"
             element={
-              <protectedRoutesUser>
+              <ProtectedRoutesUser>
                 <Order />
-              </protectedRoutesUser>
+              </ProtectedRoutesUser>
             }
           />
           <Route
             path="admin"
             element={
-              <protectedRoutesAdmin>
+              <ProtectedRoutesAdmin>
                 <Admin />
-              </protectedRoutesAdmin>
+              </ProtectedRoutesAdmin>
             }
           />
         </Routes>
@@ -58,22 +57,22 @@ function App() {
 
 export default App;
 
-export const protectedRoutesAdmin = ({ children }) => {
+export const ProtectedRoutesAdmin = ({ children }) => {
   const admin = JSON.parse(localStorage.getItem("user"));
 
-  if (admin.user.email === "ankitsrivastav38@gmail.com") {
+  if (admin?.user?.email === "ankitsrivastav38@gmail.com") {
     return children;
   } else {
-    <Navigate to={"login"} />;
+    window.location.href = "login"
   }
 };
 
-export const protectedRoutesUser = ({ children }) => {
+export const ProtectedRoutesUser = ({ children }) => {
   const user = JSON.parse(localStorage.getItem("user"));
 
   if (user) {
     return children;
   } else {
-    <Navigate to={"login"} />;
+    window.location.href = "login"
   }
 };

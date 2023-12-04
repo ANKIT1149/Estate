@@ -7,3 +7,4 @@ export {default as Loader} from "./Loader";
 export {default as Feature} from "./Feature";
 export {default as RecentProducts} from "./RecentProducts";
 // export {default as Testinomial} from "./Testinomial";
+export {default as Partener} from "./Partener" ;
