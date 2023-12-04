@@ -134,3 +134,38 @@ export const Products = [
     price: "$49.90 million",
   },
 ];
+
+export const ReactLogo = [
+   {
+     image: "https://www.carlogos.org/car-logos/tesla-logo.png",
+     point: "https://www.tesla.com/",
+   },
+   {
+    image: "https://www.carlogos.org/car-logos/bmw-logo.png",
+    point: "https://www.bmw.in/"
+  },
+  {
+    image: "https://www.carlogos.org/car-logos/ferrari-logo.png",
+    point: "https:www.ferrari.com",
+  },
+  {
+    image: "https://www.carlogos.org/car-logos/bentley-logo.png",
+    point: "https://www.bently.com/",
+  },
+  {
+    image: "https://www.carlogos.org/car-logos/lamborghini-logo.png",
+    point: "https://www.lamborghini.com/",
+  },
+  {
+    image: "https://www.carlogos.org/car-logos/ford-logo.png",
+    point: "https://www.ford.com/",
+  },
+  {
+    image: "https://www.carlogos.org/car-logos/ford-mustang-logo.png",
+    point: "https://www.ford-mustang.com/",
+  },
+  {
+    image: "https://www.carlogos.org/car-logos/rolls-royce-logo.png",
+    point: "https://www.rolls-royce.com/",
+  },
+]
