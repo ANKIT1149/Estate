@@ -51,7 +51,7 @@ function Testimonial({
           </h1>
           </div>
          
-          <h1 className="font-bold font-serif text-red-800 text-3xl relative top-[260px] left-[170px]">
+          <h1 className="font-bold font-serif text-red-800 text-3xl relative top-[210px] left-[130px]">
             Feedback
           </h1>
           <article

@@ -22,7 +22,7 @@ const Paint = () => {
   }, [selected]);
   return (
     <div className="w-[100%] h-auto py-[50px] mt-4 flex justify-center items-center gap-28">
-      <div className="flex-1 relative left-[50px] bg-white rounded-[100px] w-[400px] h-[500px] justify-center items-center">
+      <div className="flex-1 relative left-[50px] bg-white rounded-[50px] w-[500px] h-[400px] justify-center items-center">
         <img
           src={CarChanges[selected].src}
           alt=""
@@ -30,12 +30,12 @@ const Paint = () => {
           onKeyDown={() => {
             selected === 0 ? setSelected(1) : setSelected(0);
           }}
-          className={`cursor-pointer rounded-[100px]  h-[500px] ${mode === 'light' ? 'bg-transparent' :  'mix-blend-multiply'} hover:scale-105 bg-white border-none outline-none rotate-car transition-all`}
+          className={`cursor-pointer rounded-[100px]  h-[400px] ${mode === 'light' ? 'bg-transparent' :  'mix-blend-multiply'} hover:scale-105 bg-white border-none outline-none rotate-car transition-all`}
         />
       </div>
-      <div className=" pr-[100px] pb-[80px]">
+      <div className=" pr-[50px] pb-[80px]">
         <h1
-          className={`text-3xl font-bold font-serif leading-relaxed ${
+          className={`text-2xl font-bold font-serif leading-relaxed ${
             mode === "light" ? "text-emerald-700" : "text-white"
           } mb-3 capitalize`}
         >

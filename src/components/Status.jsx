@@ -58,7 +58,7 @@ const Status = () => {
           >
             M
           </NumberCounter>
-          <h6 className="text-2xl font-semibold font-serif leading-normal text-white">
+          <h6 className="text-xl font-semibold font-serif leading-normal text-white">
             Happy Customer
           </h6>
         </div>

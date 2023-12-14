@@ -1,5 +1,7 @@
 // For Navbar
 import Brand1 from "../assets/Brand1.jpg";
+
+
 export const Navlink = [
   {
     link: "Home",
@@ -9,10 +11,7 @@ export const Navlink = [
     link: "About",
     to: "about",
   },
-  {
-    link: "Service",
-    to: "services",
-  },
+ 
   {
     link: "Product",
     to: "product",
@@ -94,42 +93,42 @@ export const Products = [
   {
     img: "https://tse1.mm.bing.net/th?id=OIP.92tHydmC4UPdWovnej9pEQHaEo&pid=Api&P=0&h=180",
     title: "Bugatti La Voiture Noire",
-    des: "Best car for design and Look is Superb",
+    des: "Best car for design and Look is Superb.",
     rating: "",
     price: "$18.7 million",
   },
   {
     img: "https://tse1.mm.bing.net/th?id=OIP.uQIJb1TyA7jlthe248QeFgHaEK&pid=Api&P=0&h=180",
     title: "Audi",
-    des: "Best Comfort and Premium Look",
+    des: "Best Comfort and Premium Look.",
     rating: "",
     price: "$9 million",
   },
   {
     img: "https://tse2.mm.bing.net/th?id=OIP.sHnR-nl_EP0SbCZMaxR7IwAAAA&pid=Api&P=0&h=180",
     title: "Mercedes Benz",
-    des: "Get the award of best car of 2023",
+    des: "Get the award of best car of 2023.",
     rating: "",
     price: "$8 million",
   },
   {
     img: "https://tse1.mm.bing.net/th?id=OIP.ho82YOVVbWkNq7gc-9C9-AHaEo&pid=Api&P=0&h=180",
     title: "BMW",
-    des: "Affordable Price for super car",
+    des: "Affordable Price for super car.",
     rating: "",
     price: "$12 million",
   },
   {
     img: "https://tse4.mm.bing.net/th?id=OIP.h27gUWa4XaX3O0CGn9K2_AHaEo&pid=Api&P=0&h=180",
     title: "Range Rover",
-    des: "Best Luxurious car with all feature",
+    des: "Best Luxurious car with all feature.",
     rating: "",
     price: "$18 Million",
   },
   {
     img: "https://tse1.mm.bing.net/th?id=OIP.Y-j_H9ij2Dy9zaRDpZp6pgHaEK&pid=Api&P=0&h=180",
     title: "Rolls Royce",
-    des: "Expensive Brands provide premium look cars",
+    des: "Expensive Brands provide premiums.",
     rating: "",
     price: "$49.90 million",
   },
@@ -168,4 +167,5 @@ export const ReactLogo = [
     image: "https://www.carlogos.org/car-logos/rolls-royce-logo.png",
     point: "https://www.rolls-royce.com/",
   },
-]
+];
+
