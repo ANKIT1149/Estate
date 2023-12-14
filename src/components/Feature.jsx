@@ -11,7 +11,7 @@ const Feature = () => {
   <>
       <div className="w-[100%] h-auto py-[30px] mt-4 flex justify-center items-center gap-28">
         <div className="flex-1 relative left-[50px] justify-center items-center">
-            <h1 className={`capitalize text-3xl font-bold ${mode === "dark" ? 'text-white' : 'text-emerald-700'} font-serif leading-relaxed mb-3`}>We provide something different <br /> extraoridary  to Our  customers.</h1>
+            <h1 className={`capitalize text-2xl font-bold ${mode === "dark" ? 'text-white' : 'text-emerald-700'} font-serif leading-relaxed mb-3`}>We provide something different <br /> extraoridary  to Our  customers.</h1>
            {FeatureSection.map((feature) => (
             <>
                <div key={feature.title} className="flex mb-2">

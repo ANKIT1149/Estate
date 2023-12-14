@@ -21,7 +21,7 @@ const HeroSection = () => {
   return (
     <div className="w-[100%] h-[80vh] flex justify-center items-center gap-12 p-5">
       <div className=" mb-5 p-4">
-        <h1 className={`text-3xl text-emerald-800 font-serif font-bold leading-relaxed capitalize mb-4 ${mode === "dark" ? 'text-white' : "text-emerald-800"}`}>We provide premium & luxorious <br /> cars  in good and  affordable deals.</h1>
+        <h1 className={`text-2xl text-emerald-800 font-serif font-bold leading-relaxed capitalize mb-4 ${mode === "dark" ? 'text-white' : "text-emerald-800"}`}>We provide premium & luxorious <br /> cars  in good and  affordable deals.</h1>
         <p className=" max-w-xl text-gray-500 mb-3  pr-5">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi quo
           quaerat architecto aliquam doloribus recusandae saepe dolorum a iure
