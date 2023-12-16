@@ -1,7 +1,6 @@
 // For Navbar
 import Brand1 from "../assets/Brand1.jpg";
 
-
 export const Navlink = [
   {
     link: "Home",
@@ -11,7 +10,7 @@ export const Navlink = [
     link: "About",
     to: "about",
   },
- 
+
   {
     link: "Product",
     to: "product",
@@ -135,13 +134,13 @@ export const Products = [
 ];
 
 export const ReactLogo = [
-   {
-     image: "https://www.carlogos.org/car-logos/tesla-logo.png",
-     point: "https://www.tesla.com/",
-   },
-   {
+  {
+    image: "https://www.carlogos.org/car-logos/tesla-logo.png",
+    point: "https://www.tesla.com/",
+  },
+  {
     image: "https://www.carlogos.org/car-logos/bmw-logo.png",
-    point: "https://www.bmw.in/"
+    point: "https://www.bmw.in/",
   },
   {
     image: "https://www.carlogos.org/car-logos/ferrari-logo.png",
@@ -169,3 +168,27 @@ export const ReactLogo = [
   },
 ];
 
+export const FooterLInks = [
+  {
+    title: "Pages",
+    secondTitle: ["Home Page", "Login Page", "Contact Page", "Signup Page", "Product Page"],
+  },
+
+  {
+    title: "Course",
+    secondTitle: [
+      "Affilate Marketing",
+
+      "Digital Marketing",
+      "Educational Things",
+
+      "Intellactual Platform",
+      "Web Development",
+    ],
+  },
+
+  {
+    title: "Links",
+    secondTitle: ["Facebook Page", "Instagram Page", "Youtube Page", "Twitter Page", "Linkedin Page"],
+  },
+];
