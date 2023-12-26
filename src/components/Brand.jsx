@@ -7,13 +7,13 @@ import { BrandData } from "../data/data";
 const Brand = () => {
   const {mode} = useContext(ThemeContext)
   return (
-    <div className="w-[100%] h-auto p-[50px] mt-8 mx-[50px]">
+    <div className="w-[100%] h-auto p-[50px] max-sm:px-0 mt-8 mx-[50px] max-sm:mx-0">
       <h1 className={`text-3xl font-bold font-serif  shadow-inner shadow-black w-fit ${mode === "light" ? "text-red-700" : 'text-white'}`}>
         Most Popular Brands
       </h1>
-      <div className="flex justify-center items-center gap-8 mt-8 mb-5">
+      <div className=" max-sm:flex-col flex justify-center items-center gap-8 mt-8 mb-5">
        {BrandData.map((BrandData) => (
-           <div className="mt-2 p-4 relative BrandData" key={BrandData.BrandImg}>
+           <div className="mt-2 p-4 max-sm:p-0 relative BrandData" key={BrandData.BrandImg}>
            <img
              src={BrandData.BrandImg}
              alt=""
