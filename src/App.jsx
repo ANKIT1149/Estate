@@ -14,7 +14,7 @@ import {
   Services,
   Signup,
 } from "./pages";
-import { Navbar } from "./components";
+import { Footer, Navbar } from "./components";
 import ThemeProvider from "./context/ThemeProvider";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -49,7 +49,9 @@ function App() {
             }
           />
         </Routes>
+        <Footer />
         <ToastContainer />
+
       </Router>
     </ThemeProvider>
   );

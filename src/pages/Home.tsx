@@ -1,4 +1,4 @@
-import { AboutSection,  Feature,  HeroSection, Paint, Partener, RecentProducts, Status} from "../components"
+import { AboutSection,  Feature,   HeroSection, Paint, Partener, RecentProducts, Status, Work} from "../components"
 import Brand from "../components/Brand";
 import data from "../testinomialdata/data.json"
 import Carousel from "../components/Caraousel";
@@ -11,7 +11,7 @@ const Home = () => {
   }
   return (
     <>
-       <div className=" w-[100%] h-screen overflow-x-hidden">
+       <div className=" w-[100%] h-auto overflow-x-hidden">
          <HeroSection />
          <Status />
          <Brand />
@@ -26,6 +26,7 @@ const Home = () => {
         </Carousel>
       </main>
         <Partener />
+        <Work />
          <AboutSection />
        </div>
     </>

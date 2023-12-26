@@ -51,7 +51,7 @@ function Testimonial({
           </h1>
           </div>
          
-          <h1 className="font-bold font-serif text-red-800 text-3xl relative top-[260px] left-[170px]">
+          <h1 className="font-bold font-serif text-red-800 text-3xl relative top-[210px] left-[130px] max-sm:left-0 max-sm:top-10">
             Feedback
           </h1>
           <article
@@ -59,7 +59,7 @@ function Testimonial({
               'mt-0 overflow-auto bg-[url("https://tse4.mm.bing.net/th?id=OIP.n6d-cBDHxre9Ky6RWTv88QHaEK&pid=Api&P=0&h=180)] bg-[length:87%] bg-[center_top_1.6rem] bg-no-repeat md:relative md:isolate md:mt-0 md:flex md:h-full md:w-full md:items-center md:justify-start md:bg-[length:48%] md:bg-testimonial'
             }
           >
-            <div className="relative mx-auto mt-14 aspect-square w-[67.5%] md:absolute md:top-[48%] md:right-[11.5%] md:-z-[1] md:mt-0 md:h-[67.5%] md:w-auto md:-translate-y-1/2">
+            <div className="relative mx-auto max-sm:h-auto mt-14 aspect-square w-[67.5%] md:absolute md:top-[48%] md:right-[11.5%] md:-z-[1] md:mt-0 md:h-[67.5%] md:w-auto md:-translate-y-1/2">
               <img
                 alt={data.name}
                 aria-hidden="true"

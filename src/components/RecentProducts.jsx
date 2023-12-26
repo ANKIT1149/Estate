@@ -7,7 +7,7 @@ import { HiMiniStar } from "react-icons/hi2";
 const RecentProducts = () => {
   const { mode } = useContext(ThemeContext);
   return (
-    <div className="w-[100%] h-auto p-[50px] mt-8 mx-[50px]">
+    <div className="w-[100%] h-auto p-[30px] mt-8 mx-auto">
       <h1
         className={`text-3xl font-bold font-serif  shadow-inner shadow-black w-fit ${
           mode === "light" ? "text-red-700" : "text-white"
@@ -15,18 +15,18 @@ const RecentProducts = () => {
       >
         Recent Products
       </h1>
-      <div className="mt-4 mb-3 p-10 grid grid-cols-3 gap-8">
+      <div className="mt-4 mb-3 p-10 max-sm:p-0 grid grid-cols-3 max-sm:grid-cols-1 gap-8">
         {Products.map((product, idx) => (
           <div
             key={idx}
-            className="w-[400px] h-[auto] bg-slate-300 border-none outline-none rounded-lg p-5"
+            className="w-[400px]  h-[auto] bg-slate-300 border-none outline-none rounded-lg p-5 mx-auto"
           >
-            <img src={product.img} alt="" className="mx-auto  mb-5 w-[400px] h-[250px] rounded-lg hover:scale-105 transition-all"/>
+            <img src={product.img} alt="" className="mx-auto  mb-5 w-[400px] max-sm:w-[450px]  h-[250px] rounded-lg hover:scale-105 transition-all"/>
             <h1 className="ml-4 mb-1 font-bold font-serif text-xl leading-relaxed">{product.title}</h1>
             <p className="ml-4 mb-3 font-semibold font-sans leading-normal text-gray-700"> {product.des}</p>
-            <div className="flex gap-20 mt-3 mb-2 ml-4">
+            <div className="flex gap-12 mt-3 mb-2 ml-4">
               <h3 className=" font-bold font-serif text-red-900 text-lg">{product.price}</h3>
-              <div className="flex gap-2 mt-1">
+              <div className="flex gap-1 mt-1">
                 <HiMiniStar color="orange"/>
                 <HiMiniStar color="orange"/>
                 <HiMiniStar color="orange"/>

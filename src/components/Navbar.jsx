@@ -38,17 +38,17 @@ const Navbar = () => {
         Get free Driving Licencse on buying the car
       </p>
       <div className="w-[100%] h-[auto] overflow-hidden overflow-y-hidden shadow-md shadow-slate-500">
-        <div className="flex items-center sm:items-center max-sm:justify-center sm:flex-row p-2 mb-2">
+        <div className="flex items-center sm:items-center sm:flex-row p-2 mb-2">
           <NavLink to="/" className="logo">
             <img
               src={CardoLogo}
               alt="Cardo Logo"
               width="100px"
               height="100px"
-              className=" cursor-pointer"
+              className=" cursor-pointer mr-10"
             />
           </NavLink>
-          <nav className="flex justify-center item-center  gap-10 mx-auto">
+          <nav className="flex justify-center item-center max-sm:hidden  gap-[26px] mx-auto">
             {Navlink.map((url) => (
               <>
                 <ul key={url.link} className=" list-none flex gap-4">
@@ -127,7 +127,7 @@ const Navbar = () => {
                 ""
               )}
             </button>
-            <div className="ml-0 flow-root lg:ml-0 mt-1 mr-2">
+            <div className="ml-3 flow-root lg:ml-0 mt-1 mr-2">
               <Link
                 to={"/cart"}
                 className="group -m-2 flex items-center p-2"
