@@ -5,7 +5,7 @@ import { ReactLogo } from "../data/data";
 
 const Partener = () => {
   return (
-    <div className="w-[100%] h-[85vh] p-15 mb-8 mt-8 bg-orange-800 hover:scale-95 transition-all cursor-pointer hover:rounded-2xl">
+    <div className="w-[100%] h-[85vh] max-sm:mt-32 max-sm:h-[60vh]  p-15 mb-8 mt-8 bg-orange-800 hover:scale-95 transition-all cursor-pointer hover:rounded-2xl">
       <h1 className="font-bold font-serif text-white mt-5 p-5 capitalize text-3xl">
         Partner With Us
       </h1>

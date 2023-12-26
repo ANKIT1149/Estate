@@ -171,7 +171,13 @@ export const ReactLogo = [
 export const FooterLInks = [
   {
     title: "Pages",
-    secondTitle: ["Home Page", "Login Page", "Contact Page", "Signup Page", "Product Page"],
+    secondTitle: [
+      "Home Page",
+      "Login Page",
+      "Contact Page",
+      "Signup Page",
+      "Product Page",
+    ],
   },
 
   {
@@ -189,6 +195,12 @@ export const FooterLInks = [
 
   {
     title: "Links",
-    secondTitle: ["Facebook Page", "Instagram Page", "Youtube Page", "Twitter Page", "Linkedin Page"],
+    secondTitle: [
+      "Facebook Page",
+      "Instagram Page",
+      "Youtube Page",
+      "Twitter Page",
+      "Linkedin Page",
+    ],
   },
 ];

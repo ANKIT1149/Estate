@@ -21,7 +21,7 @@ const Paint = () => {
     }, 8000);
   }, [selected]);
   return (
-    <div className="w-[100%] h-auto py-[50px] mt-4 flex justify-center items-center gap-28">
+    <div className="w-[100%] h-auto py-[50px] mt-4 flex max-sm:flex-col justify-center items-center gap-28">
       <div className="flex-1 relative left-[50px] bg-white rounded-[50px] w-[500px] h-[400px] justify-center items-center">
         <img
           src={CarChanges[selected].src}
@@ -33,7 +33,7 @@ const Paint = () => {
           className={`cursor-pointer rounded-[100px]  h-[400px] ${mode === 'light' ? 'bg-transparent' :  'mix-blend-multiply'} hover:scale-105 bg-white border-none outline-none rotate-car transition-all`}
         />
       </div>
-      <div className=" pr-[50px] pb-[80px]">
+      <div className=" pr-[50px] pb-[80px] max-sm:pr-0">
         <h1
           className={`text-2xl font-bold font-serif leading-relaxed ${
             mode === "light" ? "text-emerald-700" : "text-white"
