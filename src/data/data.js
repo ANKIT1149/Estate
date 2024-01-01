@@ -204,3 +204,31 @@ export const FooterLInks = [
     ],
   },
 ];
+
+export const AboutData = [
+  //  Founder
+  {
+     image: "http://4.bp.blogspot.com/-jIUKyFpTu2E/UOY2YGgEKzI/AAAAAAAAAdk/AXMmcCM_gwY/s1600/6.jpg",
+     name: "Ankit Srivastav",
+     profession: "Founder of Carod Sellers",
+     About: "''I am Ankit Srivastav founder & Director of Carod Sellers.I am 21 Yrs old. I establish this company on 19March 2023. It is the Company which sells the luxurious and premium car in good and affordable deals. We also provide custoomer to choose the colour option to car that customer want to paint.We provide seervices to your home if you trouble to car.We can also book apointment to buy a carat home our team goes to your home and complete your paper work for car''. Thanks",
+     Signature: "AnkitSrivatsav",
+     button: "Contact Us"
+    },
+    {
+      image: "https://i.pinimg.com/originals/1f/14/60/1f1460a81912f2b9bca3f4944c5d85bd.jpg",
+      name: "Arif Hussain",
+      profession:  "CEO of Carod Sellers",
+      About: "''I am Arif Hussain. I am the CEO & cheif director of Carod Sellers. I am the CEO in Company since 12YRS.We Provide Good Product management, better environment setup other than company for working team.our employees are highly educated and know well in them field whatever he/she is doing in the company, we provide a person who paint and design your car with hand.Have Any query related company or our product or want to hire as a employes please contact us.''Thanks",
+      Signature: "Arif Husssain",
+      button: "Mail Us"
+    },
+    {
+      image: "https://www.thefashionisto.com/wp-content/uploads/2017/08/Express-Mens-Skinny-Innovator-Black-Performance-Stretch-Wool-Blend-Suit.jpg",
+      name: "Rakesh Chawla",
+      profession: "Founder of Duke & investor of Carod Sellers",
+      About: "''I am Rakesh Chawla. I Am the founder of Duke and investor in Carod Sellers. I invest 60% of my income in this company in year. & I have an equity of 20% in Company. I want to say it is the best company for investing your time and money.Their services is very good.They provide suitable and premium environment for employees and for investor.They treated friendly to customer or investor.So if you want to ivest your time & money in it you can.''Thanks",
+      Signature: "Rakesh Chawla",
+      button: "Invest Now"
+    }
+]

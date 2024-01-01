@@ -8,6 +8,7 @@ import Logo from "../assets/Logo.jpeg";
 import { FooterLInks } from "../data/data";
 // import { FiInstagram } from "react-icons/fi";
 const Footer = () => {
+  
   return (
     <div className="w-[100%] h-[70vh] max-sm:h-auto mt-4 max-sm:mt-1  border-none outline-none bg-slate-400">
       {/* Copyright Section */}
