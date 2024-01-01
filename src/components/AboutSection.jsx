@@ -2,7 +2,7 @@
 
 const AboutSection = () => {
   return (
-    <div>
+    <div className=" w-full h-auto overflow-hidden">
       
     </div>
   )
