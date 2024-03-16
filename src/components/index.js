@@ -10,3 +10,4 @@ export {default as RecentProducts} from "./RecentProducts";
 export {default as Partener} from "./Partener" ;
 export {default as Footer} from "./Footer";
 export {default as Work} from "./Work";
+export {default as Pagination} from "./Pagination";

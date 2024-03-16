@@ -8,3 +8,4 @@ export {default as Signup} from "./Signup";
 export {default as Admin} from "./Admin";
 export {default as AboutHome} from "./AboutPages/Home";
 export {default as Intro} from "./AboutPages/Intro";
+export {default as Gallery} from "./AboutPages/Gallery"

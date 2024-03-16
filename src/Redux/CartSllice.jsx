@@ -1,21 +1,21 @@
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = [];
 
 const cartSlice = createSlice({
-     name: 'carCart',
-     initialState,
-     reducers:{
-         addtoCart(state, action){
-            state.push(action.payload) 
-         },
+  name: "carCart",
+  initialState,
+  reducers: {
+    addtoCart(state, action) {
+      state.push(action.payload);
+    },
 
-         deletefromCart(state, action){
-  return state.filter(item => item.id !== action.payload.id)
-         }
-     }
-})
+    deletefromCart(state, action) {
+      return state.filter((item) => item.id !== action.payload.id);
+    },
+  },
+});
 
-export const {addtoCart, deletefromCart} = cartSlice.actions;
+export const { addtoCart, deletefromCart } = cartSlice.actions;
 
-export default cartSlice.reducer
+export default cartSlice.reducer;
