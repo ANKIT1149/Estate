@@ -6,7 +6,7 @@ import ThemeContext from "../../context/ThemeContext"
 const Process = () => {
     const {mode} = useContext(ThemeContext);
   return (
-    <div className="w-[100%] h-auto p-5 overflow-hidden">
+    <div className="w-[100%] h-auto p-5 overflow-hidden max-sm:hidden">
     <h1
       className={`text-3xl font-bold font-serif mt-5 shadow-inner capitalize shadow-black w-fit ${
         mode === "light" ? "text-red-700" : "text-white"

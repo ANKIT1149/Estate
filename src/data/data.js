@@ -1,5 +1,8 @@
 // For Navbar
+import { GiShakingHands } from "react-icons/gi";
 import Brand1 from "../assets/Brand1.jpg";
+import { FiMail } from "react-icons/fi";
+import { BsWhatsapp } from "react-icons/bs";
 
 export const Navlink = [
   {
@@ -258,5 +261,25 @@ export const CompanyCampus = [
     {
       campus: "https://media.gettyimages.com/id/555468377/photo/40s-couple-in-apartment.jpg?s=612x612&w=0&k=20&c=_S0QttBqixdneQf6nxQ9M09hBnG4mppeBxL0u8j1JO4=",
     },
+]
+
+export const Type = [
+    {
+      Icon: GiShakingHands,
+      title: "Direct Appointment:-",
+      detail: "You can meet our Md, manager or interviewer face to face by Getting direct appointment from reception area or by filling appointment form onlline at our website or app."
+    },
+
+    {
+      Icon: FiMail,
+      title: " Using Mail Message:-",
+      detail: "You can send your problem on company mail so our it team help you to solve your problem. If you want to get jobs so fill the our job form. Fill email correctly so our Md, Manager or Interviewer can connect with you as soon as possible."
+    },
+
+    {
+      Icon: BsWhatsapp,
+      title: "By Using Whatsapp :-",
+      detail: "You can message us in whatsapp to discuss your problem related to our company. You can also send messages on our whatsapp no. to get information about our campus, curriculum, jobs, cars or many things."
+    }
 ]
 
