@@ -31,13 +31,13 @@ const Intro = () => {
   return (
     <div className="p-10 w-full h-auto">
       <h1
-        className={`text-3xl font-bold font-serif  shadow-inner shadow-black w-fit ${
+        className={`text-3xl max-sm:text-xl font-bold font-serif  shadow-inner shadow-black w-fit ${
           mode === "light" ? "text-red-700" : "text-white"
         }`}
       >
         Meet Our Founder And CEO
       </h1>
-      <div className="w-[96%] h-auto p-2 flex justify-center items-center border-2 mx-auto gap-12 my-8 border-[#07d2f6] rounded-t-xl bg-[#07d2f6]">
+      <div className="w-[96%] h-auto p-2 flex justify-center items-center border-2 mx-auto gap-12 my-8 border-[#07d2f6] rounded-t-xl bg-[#07d2f6] max-sm:flex-col">
         <div
           onClick={() => {
             setSelected(0);
